@@ -7,7 +7,6 @@ import {
   Container,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -19,6 +18,7 @@ import {
 } from "reactstrap";
 
 import { useAuth0 } from "../react-auth0-spa";
+import logo from "../assets/zinc_logo.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,20 +34,43 @@ const NavBar = () => {
     <div className="nav-container">
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand className="logo" />
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink
-                  tag={RouterNavLink}
-                  to="/"
-                  exact
-                  activeClassName="router-link-exact-active"
-                >
-                  Home
+                <NavLink tag={RouterNavLink} to="/" exact>
+                  <img
+                    className="zinc-logo"
+                    src={logo}
+                    alt="Zinc logo"
+                    width="120"
+                  />
                 </NavLink>
               </NavItem>
+              {isAuthenticated && (
+                <>
+                  <NavItem className="nav-link">
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/portfolio"
+                      exact
+                      activeClassName="router-link-exact-active"
+                    >
+                      Portfolio
+                    </NavLink>
+                  </NavItem>
+                  <NavItem className="nav-link">
+                    <NavLink
+                      tag={RouterNavLink}
+                      to="/create"
+                      exact
+                      activeClassName="router-link-exact-active"
+                    >
+                      Create
+                    </NavLink>
+                  </NavItem>
+                </>
+              )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
               {!isAuthenticated && (
