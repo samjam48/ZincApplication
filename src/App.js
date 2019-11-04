@@ -10,7 +10,7 @@ import Home from "./views/Home";
 import Profile from "./views/Profile";
 import Portfolio from "./views/Portfolio";
 import CreateIdea from "./views/CreateIdea";
-import Idea from "./views/Idea";
+import Project from "./views/Project";
 import { useAuth0 } from "./react-auth0-spa";
 import history from "./utils/history";
 
@@ -36,9 +36,9 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
-            <PrivateRoute path="/portfolio" component={Portfolio} />
+            <Route path="/portfolio" component={Portfolio} />
             <PrivateRoute path="/create" component={CreateIdea} />
-            <PrivateRoute path="/view/:id" component={Idea} />
+            <Route path="/project/:id" component={Project} />
           </Switch>
         </Container>
         <Footer />

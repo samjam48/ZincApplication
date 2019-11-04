@@ -26,6 +26,12 @@ class Content extends Component {
                   alt={col.title + " logo"}
                 />
                 <p className="project-card__description">{col.description}</p>
+                <p className="project-card__description">
+                  <a href={`/project/${col.id}`}>
+                    <FontAwesomeIcon icon="link" className="mr-2" />
+                    View Project
+                  </a>
+                </p>
               </div>
             </Col>
           ))}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
-import Highlight from "../components/Highlight";
+// import Highlight from "../components/Highlight";
 import Loading from "../components/Loading";
 import { useAuth0 } from "../react-auth0-spa";
 
@@ -27,9 +27,9 @@ const Profile = () => {
           <p className="lead text-muted">{user.email}</p>
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
         <Highlight>{JSON.stringify(user, null, 2)}</Highlight>
-      </Row>
+      </Row> */}
     </Container>
   );
 };
