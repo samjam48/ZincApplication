@@ -19,6 +19,7 @@ class Content extends Component {
                   {col.title}
                 </a>
               </h6>
+              <img src={col.image} alt={col.title + " logo"} />
               <p>{col.description}</p>
             </Col>
           ))}
