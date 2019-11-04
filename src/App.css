@@ -1,6 +1,4 @@
-.next-steps .fa-link {
-  margin-right: 5px;
-}
+/* ----------------- Navbar --------------- */
 
 .nav-link {
   display: flex;
@@ -15,6 +13,8 @@
 .hero p.lead {
   margin-bottom: 2rem;
 }
+
+/* ----------------- Portfolio Page --------------- */
 
 .project-card {
   max-width: 300px;
@@ -39,20 +39,31 @@
   padding: 10px;
 }
 
+.row {
+  margin-right: 12%;
+  margin-left: 12%;
+}
+
+.portfolio-page .fa-link {
+  margin-right: 5px;
+}
+
 /* Fix for use only flexbox in content area */
-.next-steps .row {
+.portfolio-page .row {
   margin-bottom: 0;
 }
 
-.next-steps .col-md-5 {
+.portfolio-page .col-md-5 {
   margin-bottom: 3rem;
 }
 
 @media (max-width: 768px) {
-  .next-steps .col-md-5 {
+  .portfolio-page .col-md-5 {
     margin-bottom: 0;
   }
 }
+
+/* ----------------- Loading --------------- */
 
 .spinner {
   position: absolute;
