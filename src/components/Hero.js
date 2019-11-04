@@ -9,7 +9,7 @@ const Hero = () => (
 
     <p className="lead">
       This is a sample application built to provide a basic discussion forum and
-      portfolio manager for <a href="https://www.zinc.vc/">Zinc</a> Founder
+      portfolio manager for <a href="https://www.zinc.vc/">Zinc VC</a> Founder
       ideas, using <a href="https://reactjs.org">React.js</a>
     </p>
     <p className="lead">
