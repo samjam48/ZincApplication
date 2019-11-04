@@ -2,6 +2,16 @@
   margin-right: 5px;
 }
 
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  left: -80px;
+}
+
 /* Fix for use only flexbox in content area */
 .next-steps .row {
   margin-bottom: 0;
