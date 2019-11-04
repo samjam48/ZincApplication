@@ -8,6 +8,9 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./views/Home";
 import Profile from "./views/Profile";
+import Portfolio from "./views/Portfolio";
+import CreateIdea from "./views/CreateIdea";
+import Idea from "./views/Idea";
 import { useAuth0 } from "./react-auth0-spa";
 import history from "./utils/history";
 
@@ -33,6 +36,9 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <PrivateRoute path="/profile" component={Profile} />
+            <PrivateRoute path="/portfolio" component={Portfolio} />
+            <PrivateRoute path="/create" component={CreateIdea} />
+            <PrivateRoute path="/view/:id" component={Idea} />
           </Switch>
         </Container>
         <Footer />
