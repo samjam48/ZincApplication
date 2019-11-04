@@ -2,9 +2,6 @@
 
 This app is my application for the Developer in Residence role at Zinc VC.
 
-## Demo
-
-A live demo is available at https://zinc-portfolio.netlify.com
 
 ## Project setup
 
