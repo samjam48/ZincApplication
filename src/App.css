@@ -16,6 +16,29 @@
   margin-bottom: 2rem;
 }
 
+.project-card {
+  max-width: 300px;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.project-card__image {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.project-card__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card__description {
+  padding: 10px;
+}
+
 /* Fix for use only flexbox in content area */
 .next-steps .row {
   margin-bottom: 0;

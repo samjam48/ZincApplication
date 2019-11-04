@@ -1,10 +1,10 @@
 const contentData = [
   {
-    title: "project-1",
-    link: "#",
-    inage:
-      "https://andazpress.files.wordpress.com/2015/03/ap58442_circle_gift_tags_solid_border_blank_royal-blue.jpg",
-    description: "An awesome project that will change the world."
+    title: "Canary Tech",
+    link: "https://www.canarytech.co.uk/",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/5cab4d6c840b1654c26a7c35/1562250043979-YIX40T44JBNOEDWDB8XI/ke17ZwdGBToddI8pDm48kORlCeeW6NBu4CrDrxyIV4VZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF1rv8NN2xRx-FW9OmacMnGMCugJJ3W9HBkucYBDG-bdt1lH3P2bFZvTItROhWrBJ0/zm2-colour-13-13.png",
+    description: "Speak up safely and anonymously about workplace harassment."
   },
   {
     title: "Mobilise",
