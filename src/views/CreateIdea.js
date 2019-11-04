@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 
-import Content from "../components/Content";
+import IdeaForm from "../components/IdeaForm";
 
 const CreateIdea = () => (
   <Fragment>
-    <Content />
+    <h1 className="mb-4">Submit your Idea</h1>
+    <IdeaForm />
   </Fragment>
 );
 
