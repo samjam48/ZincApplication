@@ -12,14 +12,21 @@ class Content extends Component {
         <h2 className="my-5 text-center">What can I do next?</h2>
         <Row className="d-flex justify-content-between">
           {contentData.map((col, i) => (
-            <Col key={i} md={5} className="mb-4">
+            <Col key={i} md={5} className="mb-4 project-card">
               <h6 className="mb-3">
                 <a href={col.link}>
                   <FontAwesomeIcon icon="link" className="mr-2" />
                   {col.title}
                 </a>
               </h6>
-              <p>{col.description}</p>
+              <div className="project-card__content">
+                <img
+                  className="project-card__image"
+                  src={col.image}
+                  alt={col.title + " logo"}
+                />
+                <p className="project-card__description">{col.description}</p>
+              </div>
             </Col>
           ))}
         </Row>
