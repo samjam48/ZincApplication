@@ -63,6 +63,19 @@
   }
 }
 
+/* ----------------- Project Page --------------- */
+
+.project {
+  text-align: center;
+}
+
+.project__image {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
 /* ----------------- Loading --------------- */
 
 .spinner {
