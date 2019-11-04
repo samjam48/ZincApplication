@@ -12,6 +12,10 @@
   left: -80px;
 }
 
+.hero p.lead {
+  margin-bottom: 2rem;
+}
+
 /* Fix for use only flexbox in content area */
 .next-steps .row {
   margin-bottom: 0;
