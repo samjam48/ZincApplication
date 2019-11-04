@@ -1,16 +1,10 @@
 import React from "react";
 import ImageUploader from "react-images-upload";
 
-function Upload() {
-  const [pictures, setPictures] = React.useState([]);
-
+function Upload({ pictures, setPictures }) {
   const onDrop = picture => {
     setPictures(pictures.concat(picture));
   };
-
-  React.useEffect(() => {
-    console.log({ pictures });
-  }, [pictures]);
 
   return (
     <ImageUploader
