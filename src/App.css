@@ -76,6 +76,17 @@
   margin: 20px;
 }
 
+/* ----------------- Idea Form --------------- */
+
+.idea-form__input {
+  margin: 5px;
+}
+
+.text_input {
+  width: 350px;
+  height: 50px;
+}
+
 /* ----------------- Loading --------------- */
 
 .spinner {

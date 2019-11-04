@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import contentData from "../utils/contentData";
 
